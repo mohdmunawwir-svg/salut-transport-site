@@ -4,19 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Salut Transport | Van Sekolah</title>
-  <meta name="description" content="Salut Transport menyediakan perkhidmatan van sekolah yang selamat & tersusun untuk pelajar." />
+  <meta name="description" content="Salut Transport menyediakan perkhidmatan van sekolah yang selamat & tersusun. Pembayaran online tersedia (FPX/Kad). Polisi lengkap untuk pematuhan pembayaran." />
+  <meta name="theme-color" content="#0b1220" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <header class="nav">
   <div class="container">
-    <div class="row">
-      <a class="brand" href="index.html">
+    <div class="navRow">
+      <a class="brand" href="index.html" aria-label="Salut Transport Home">
         <span class="logo" aria-hidden="true"></span>
         <span>SALUT TRANSPORT</span>
       </a>
-      <nav class="links" aria-label="Navigation">
+
+      <nav class="navLinks" aria-label="Primary">
         <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">T&amp;C</a>
@@ -26,39 +29,73 @@
   </div>
 </header>
 
-<main class="container">
-  <section class="hero">
-    <h1>Van sekolah yang selamat, kemas & mudah diurus.</h1>
-    <p>
-      Kami menyediakan perkhidmatan pengangkutan pelajar mengikut laluan/jadual yang dipersetujui.
-      Pembayaran boleh dibuat secara online (FPX/Kad) melalui gateway pembayaran yang selamat.
-    </p>
+<main id="main" class="container">
+  <section class="hero" aria-label="Hero">
+    <div class="heroCard">
+      <div class="heroInner">
+        <span class="kicker">✅ Polis lengkap untuk pembayaran (ToyyibPay/CommercePay)</span>
+        <h1 class="h1">Van sekolah yang selamat, tersusun & mudah diurus.</h1>
+        <p class="lead">
+          Salut Transport menyediakan perkhidmatan pengangkutan pelajar mengikut laluan dan jadual yang dipersetujui.
+          Pembayaran online tersedia (FPX/Kad) melalui gateway yang selamat.
+        </p>
 
-    <div class="badges">
-      <div class="badge">✅ Polisi lengkap (ToyyibPay/CommercePay)</div>
-      <div class="badge">📍 Kajang / Bangi (edit ikut kawasan)</div>
-      <div class="badge">🧾 Resit pembayaran tersedia</div>
+        <div class="pills" aria-label="Key points">
+          <span class="pill">📍 Kawasan servis: Kajang / Bangi</span>
+          <span class="pill">🧾 Resit pembayaran tersedia</span>
+          <span class="pill">🕒 Sokongan WhatsApp</span>
+        </div>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="[PASTE_ONPAY_OR_PAYMENT_LINK]">Bayar / Daftar</a>
+          <a class="btn" href="contact.html">Hubungi Kami</a>
+        </div>
+
+        <p class="small" style="margin-top:12px">
+          Nota: Link polisi dipaparkan untuk tujuan pematuhan pembayaran kad (compliance).
+        </p>
+      </div>
     </div>
 
-    <div class="ctaRow">
-      <a class="btn primary" href="[PASTE_YOUR_ONPAY_OR_PAYMENT_LINK]">Bayar / Daftar</a>
-      <a class="btn" href="contact.html">Hubungi Kami</a>
-    </div>
+    <aside class="sideCard" aria-label="Quick info">
+      <h2 class="sideTitle">Ringkasan Perkhidmatan</h2>
+      <p class="sideText">Sesuai untuk ibu bapa yang perlukan pengangkutan sekolah yang konsisten dan jelas.</p>
+
+      <ul class="sideList">
+        <li class="sideItem">
+          <b>Jenis</b>
+          <div class="small">Sehala / Dua hala (mengikut pakej & zon)</div>
+        </li>
+        <li class="sideItem">
+          <b>Komunikasi</b>
+          <div class="small">WhatsApp untuk pendaftaran, perubahan dan bantuan bayaran</div>
+        </li>
+        <li class="sideItem">
+          <b>Polisi & Terma</b>
+          <div class="small">Privacy, T&amp;C (Governing Law: Malaysia), Cancellation, Refund, Service Delivery</div>
+        </li>
+      </ul>
+    </aside>
   </section>
 
+  <h2 class="sectionTitle">Kenapa Salut Transport</h2>
   <section class="grid" aria-label="Highlights">
     <div class="card">
-      <h3>Perkhidmatan</h3>
-      <p>Pengangkutan pelajar (sehala/dua hala) mengikut zon dan jadual.</p>
+      <h3>Operasi lebih teratur</h3>
+      <p>Maklumat laluan, jadual dan komunikasi yang jelas untuk ibu bapa.</p>
     </div>
     <div class="card">
-      <h3>Maklumat & Polisi</h3>
-      <p>Privacy, T&amp;C (Governing Law), Cancellation, Refund & Service Delivery dipaparkan jelas.</p>
+      <h3>Pembayaran online</h3>
+      <p>FPX/Kad melalui gateway yang selamat. Resit disediakan selepas bayaran.</p>
+    </div>
+    <div class="card">
+      <h3>Polisi lengkap</h3>
+      <p>Semua polisi wajib dipaparkan untuk pematuhan pembayaran (compliance).</p>
     </div>
   </section>
 
-  <section class="content">
-    <h2>Pautan Polisi (untuk pematuhan pembayaran kad)</h2>
+  <section class="content" aria-label="Compliance links">
+    <h2>Pautan Polisi (Compliance)</h2>
     <ul>
       <li><a href="privacy.html">Privacy Policy</a></li>
       <li><a href="terms.html">Terms &amp; Conditions (Governing Law: Malaysia)</a></li>
@@ -67,16 +104,19 @@
       <li><a href="service-delivery.html">Service Delivery Policy</a></li>
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
-    <p class="small">Nota: Senarai polisi ini disediakan untuk memenuhi keperluan yang ToyyibPay minta. :contentReference[oaicite:1]{index=1}</p>
   </section>
 
-  <footer class="footer">
-    <div>
-      © <span id="y"></span> SALUT TRANSPORT •
-      <a href="privacy.html">Privacy</a> •
-      <a href="terms.html">T&amp;C</a> •
-      <a href="refund.html">Refund</a> •
-      <a href="contact.html">Contact</a>
+  <footer class="footer" aria-label="Footer">
+    <div class="footerRow">
+      <div>© <span id="y"></span> SALUT TRANSPORT</div>
+      <div class="footerLinks">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">T&amp;C</a>
+        <a href="cancellation.html">Cancellation</a>
+        <a href="refund.html">Refund</a>
+        <a href="service-delivery.html">Service Delivery</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </footer>
 </main>

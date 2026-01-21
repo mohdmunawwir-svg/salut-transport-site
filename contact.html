@@ -4,14 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact Us | Salut Transport</title>
+  <meta name="description" content="Hubungi Salut Transport untuk pendaftaran van sekolah, jadual, harga dan bantuan pembayaran." />
+  <meta name="theme-color" content="#0b1220" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+
 <header class="nav">
   <div class="container">
-    <div class="row">
-      <a class="brand" href="index.html"><span class="logo"></span><span>SALUT TRANSPORT</span></a>
-      <nav class="links">
+    <div class="navRow">
+      <a class="brand" href="index.html" aria-label="Salut Transport Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span>SALUT TRANSPORT</span>
+      </a>
+      <nav class="navLinks" aria-label="Primary">
+        <a href="contact.html">Contact</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">T&amp;C</a>
         <a href="refund.html">Refund</a>
@@ -20,38 +28,50 @@
   </div>
 </header>
 
-<main class="container">
+<main id="main" class="container">
   <section class="content">
     <h2>Contact Us</h2>
-    <p>Sila hubungi kami untuk pertanyaan pendaftaran, jadual, harga, atau bantuan pembayaran.</p>
+    <p>
+      Sila hubungi kami untuk pertanyaan pendaftaran, kawasan servis, harga pakej (sehala/dua hala),
+      perubahan alamat pickup/drop-off, atau bantuan pembayaran.
+    </p>
 
-    <div class="kv">
-      <div>Business Name</div><div><strong>SALUT TRANSPORT</strong></div>
+    <div class="content" style="margin-top:14px">
+      <h3>Maklumat Perniagaan</h3>
+      <ul>
+        <li><strong>Business Name:</strong> SALUT TRANSPORT</li>
+        <li><strong>Business Address:</strong> <span style="opacity:.9">[ALAMAT PENUH, POSKOD, NEGERI]</span></li>
+        <li><strong>Email:</strong> <a href="mailto:[EMAIL]">[EMAIL]</a></li>
+        <li><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/6[NUM_TANPA_0]">[CONTOH: 012-353 9977]</a></li>
+        <li><strong>Operating Hours:</strong> <span style="opacity:.9">[CONTOH: Isnin–Jumaat, 7:00am – 7:00pm]</span></li>
+      </ul>
 
-      <div>Business Address</div>
-      <div>[ALAMAT PENUH, POSKOD, NEGERI]</div>
-
-      <div>Email</div>
-      <div><a href="mailto:saluttransport@gmail.com">saluttransport@gmail.com</a></div>
-
-      <div>Phone / WhatsApp</div>
-      <div><a href="https://wa.me/6[NUM_TANPA_0]">[012-353 9977]</a></div>
-
-      <div>Operating Hours</div>
-      <div>[contoh: Isnin–Jumaat, 7:00am – 7:00pm]</div>
+      <p class="small" style="margin-top:10px">
+        Nota: Untuk kelulusan pembayaran kad (ToyyibPay/CommercePay), halaman Contact Us perlu memaparkan nama bisnes, alamat, email dan nombor telefon.
+      </p>
     </div>
 
-    <p class="small">
-      ToyyibPay minta bahagian Contact Us memaparkan nama bisnes, alamat, email & nombor telefon. :contentReference[oaicite:2]{index=2}
-    </p>
+    <div class="content" style="margin-top:14px">
+      <h3>Bantuan Pantas</h3>
+      <ul>
+        <li><strong>Pendaftaran:</strong> Hantar nama penjaga, nama pelajar, sekolah, alamat pickup & drop-off.</li>
+        <li><strong>Perubahan alamat/jadual:</strong> Maklumkan sekurang-kurangnya <span style="opacity:.9">[24–48 jam]</span> lebih awal.</li>
+        <li><strong>Isu bayaran:</strong> Sertakan resit / rujukan transaksi untuk semakan.</li>
+      </ul>
+    </div>
   </section>
 
-  <footer class="footer">
-    <div>
-      © <span id="y"></span> SALUT TRANSPORT •
-      <a href="privacy.html">Privacy</a> • <a href="terms.html">T&amp;C</a> •
-      <a href="cancellation.html">Cancellation</a> • <a href="refund.html">Refund</a> •
-      <a href="service-delivery.html">Service Delivery</a>
+  <footer class="footer" aria-label="Footer">
+    <div class="footerRow">
+      <div>© <span id="y"></span> SALUT TRANSPORT</div>
+      <div class="footerLinks">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">T&amp;C</a>
+        <a href="cancellation.html">Cancellation</a>
+        <a href="refund.html">Refund</a>
+        <a href="service-delivery.html">Service Delivery</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </footer>
 </main>

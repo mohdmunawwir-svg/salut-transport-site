@@ -23,16 +23,21 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  margin:0;
-  font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-  color:var(--text);
-  overflow-x:hidden;
   background:
-    radial-gradient(circle at 14% 18%, rgba(47,128,237,.26), transparent 28%),
-    radial-gradient(circle at 86% 70%, rgba(246,181,46,.26), transparent 30%),
-    radial-gradient(circle at 50% 50%, rgba(255,255,255,.045), transparent 42%),
-    linear-gradient(135deg,#06101d 0%, #0b1727 48%, #151a16 100%);
-  min-height:100vh;
+    radial-gradient(circle at 15% 20%, rgba(0,102,255,.16), transparent 26%),
+    radial-gradient(circle at 85% 75%, rgba(255,170,0,.12), transparent 28%),
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,.03), transparent 40%),
+    linear-gradient(
+      180deg,
+      #040816 0%,
+      #07101F 30%,
+      #081120 65%,
+      #050B16 100%
+    );
+
+  color:#F8FAFC;
+  overflow-x:hidden;
+  position:relative;
 }
 
 body::before{
@@ -69,13 +74,11 @@ a{color:inherit;text-decoration:none}
 .green{color:var(--teal)}
 
 .nav{
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:rgba(8,17,32,.55);
-  backdrop-filter:blur(18px);
-  -webkit-backdrop-filter:blur(18px);
-  border-bottom:1px solid rgba(255,255,255,.08);
+  background:rgba(4,8,22,.72);
+
+  backdrop-filter:blur(14px);
+
+  border-bottom:1px solid rgba(255,255,255,.05);
 }
 .navRow{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:950;letter-spacing:.5px;color:var(--text)}
@@ -144,11 +147,17 @@ a{color:inherit;text-decoration:none}
 
 section{padding:78px 0}.sectionTitle{font-size:46px;line-height:1.12;margin:0 0 16px;letter-spacing:-1.2px}.sectionLead{color:var(--muted);font-size:17px;line-height:1.8;max-width:780px;margin:0 0 32px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.card,.contentPage{
-  background:rgba(255,255,255,.085);border:1px solid rgba(255,255,255,.13);border-radius:var(--radius);padding:30px;
-  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-  box-shadow:var(--shadow2), inset 0 1px 1px rgba(255,255,255,.08);
-  transition:.28s ease;position:relative;overflow:hidden
+.card,
+.content{
+  background:rgba(17,24,39,.58);
+
+  border:1px solid rgba(255,255,255,.06);
+
+  backdrop-filter:blur(18px);
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,.42),
+    inset 0 1px 1px rgba(255,255,255,.04);
 }
 .card::before,.contentPage::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.07),transparent 42%);pointer-events:none}
 .card:hover,.contentPage:hover{transform:translateY(-8px);box-shadow:0 28px 80px rgba(0,0,0,.38),0 0 28px rgba(47,128,237,.13)}

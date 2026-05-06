@@ -68,5 +68,41 @@ a{color:inherit;text-decoration:none}
   background:white;
   border:1px solid var(--line);
 }
+.card,
+.content,
+.price-card,
+.trust-card,
+.area-card {
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .08);
+}
+.card:hover,
+.content:hover,
+.price-card:hover,
+.trust-card:hover,
+.area-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, .14);
+  border-color: rgba(47, 111, 237, .22);
+}
+.card,
+.content {
+  border-radius: 22px;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(10px);
+}
+
+@keyframes floatSoft {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.card:nth-child(odd) {
+  animation: floatSoft 4s ease-in-out infinite;
+}
+
+.card:nth-child(even) {
+  animation: floatSoft 5s ease-in-out infinite;
+}
           
 @media (max-width:860px){.container{padding:18px}.hero{grid-template-columns:1fr;padding-top:34px}.hero-card{order:-1}.links{gap:4px;font-size:13px}.links a{padding:8px}.card,.card.wide{grid-column:span 12}.pricing{grid-template-columns:1fr}.kv{grid-template-columns:1fr;gap:4px}.hero p{font-size:16px}.whatsapp-float{left:16px;right:16px;text-align:center}}

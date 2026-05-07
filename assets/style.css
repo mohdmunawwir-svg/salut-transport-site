@@ -363,7 +363,7 @@ h1{
 
 /* buang line lama / text kecil */
 .bus:after{
-  content:"";
+  content:"VAN SEKOLAH";
 }
 
 .busText{

@@ -1,4 +1,3 @@
-```css
 :root{
   --blueTop:#3927ff;
   --blueMid:#1761ff;
@@ -516,12 +515,3 @@ section{
   .wheel.one{left:65px}
   .wheel.two{right:70px}
 }
-```
-
-Dan HTML logo:
-
-```html
-<div class="logo">
-  <img src="assets/logo.png" alt="Salut Transport">
-</div>
-```
